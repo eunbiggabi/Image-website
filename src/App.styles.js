@@ -20,6 +20,6 @@ export const BodyContainer = styled.div`
   top: 0;
   right: 0;
   /* justify-content: space-between; */
-  transform: translate(-50%, 50%);
+  transform: translate(-100%, 50%);
   padding: 0 30px;
 `;

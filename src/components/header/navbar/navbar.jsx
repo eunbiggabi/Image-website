@@ -30,9 +30,15 @@ export default function Navbar() {
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </MobileIcon>
-          <NavMenu onClick={handleClick}>
+          <NavMenu onClick={handleClick} click={click}>
             <MenuItem>
               <NavLink to="/">Home</NavLink>
+            </MenuItem>
+            <MenuItem>
+              <NavLink to="/collection">Collection</NavLink>
+            </MenuItem>
+            <MenuItem>
+              <NavLink to="/contact">Contact</NavLink>
             </MenuItem>
           </NavMenu>
         </NavbarContainer>
