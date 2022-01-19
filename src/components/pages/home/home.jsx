@@ -7,13 +7,16 @@ import {
   HomeDescription,
   HomeButton,
   HomeMainImage,
-  HomeSide,
+  HomeSideContainer,
   HomeSideImage1,
   HomeSideImage2,
+  HomeSideInfo,
   HomeSideTitle,
-  HomeSideDesciption
+  HomeSideDesciption,
 } from "./home.styles";
-import MainImage from '../../../assets/images/home/profile.jpeg'
+import MainImage from "../../../assets/images/home/profile.jpeg";
+import SideImage1 from "../../../assets/images/home/homeSide1.jpeg";
+import SideImage2 from "../../../assets/images/home/homeSide2.jpeg";
 
 export default function Home() {
   return (
@@ -32,17 +35,19 @@ export default function Home() {
           </HomeInfo>
           <HomeMainImage src={MainImage} />
         </HomeMainContainer>
-        <HomeSide>
-          <HomeSideImage1 src="images/home/homeSide1.jpeg" />
-          <HomeSideImage2 src="images/home/homeSide2.jpeg" />
-          <HomeSideTitle>This is Side title</HomeSideTitle>
-          <HomeSideDesciption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            deleniti debitis, fuga, eum nisi harum, nobis suscipit nulla est nam
-            ullam dicta tempore explicabo deserunt recusandae laborum blanditiis
-            magni perferendis?
-          </HomeSideDesciption>
-        </HomeSide>
+        <HomeSideContainer>
+          <HomeSideImage1 src={SideImage1} />
+          <HomeSideInfo>
+            <HomeSideTitle>I am a Fruit girl</HomeSideTitle>
+            <HomeSideDesciption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              deleniti debitis, fuga, eum nisi harum, nobis suscipit nulla est
+              nam ullam dicta tempore explicabo deserunt recusandae laborum
+              blanditiis magni perferendis?
+            </HomeSideDesciption>
+          </HomeSideInfo>
+          <HomeSideImage2 src={SideImage2} />
+        </HomeSideContainer>
       </HomeContainer>
     </HomeSection>
   );

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../../globalStyles";
+import { Container, BigImage, SmallImage } from "../../../globalStyles";
 
 export const HomeSection = styled.section`
   display: flex;
@@ -19,7 +19,8 @@ export const HomeMainContainer = styled.div`
   display: flex;
 
   @media screen and (max-width: 760px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 `;
 
@@ -33,24 +34,43 @@ export const HomeDescription = styled.p``;
 
 export const HomeButton = styled.button``;
 
-export const HomeMainImage = styled.img`
-  width: 480px;
-  height: 480px;
-  border-radius: 0.5rem;
+export const HomeMainImage = styled(BigImage)`
   transform: rotate(10deg);
 
+  ${BigImage};
   @media screen and (max-width: 760px) {
-    width: 240px;
-    height: 240px;
     transform: none;
   }
 `;
 
-export const HomeSide = styled.div``;
+export const HomeSideContainer = styled.div`
+  display: flex;
+  padding-top: 3em;
 
-export const HomeSideImage1 = styled.img``;
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
-export const HomeSideImage2 = styled.img``;
+export const HomeSideImage1 = styled(SmallImage)`
+  ${SmallImage}
+`;
+
+export const HomeSideImage2 = styled(SmallImage)`
+  ${SmallImage}
+`;
+
+export const HomeSideInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  text-align: center;
+
+  @media screen and (max-width: 760px) {
+    padding: 2em 0;
+  }
+`;
 
 export const HomeSideTitle = styled.h2``;
 

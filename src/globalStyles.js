@@ -23,3 +23,27 @@ export const Container = styled.div`
     padding-right: 30px;
   }
 `;
+
+export const BigImage = styled.img`
+  width: 480px;
+  height: 480px;
+  border-radius: 0.5rem;
+
+  @media screen and (max-width: 760px) {
+    width: 350px;
+    height: 350px;
+    transform: none;
+  }
+`
+
+export const SmallImage = styled.img`
+  width: 280px;
+  height: 240px;
+  border-radius: 2rem;
+
+  @media screen and (max-width: 760px) {
+    width: 350px;
+    height: 280px;
+  }
+
+`;
