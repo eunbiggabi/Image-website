@@ -8,6 +8,7 @@ export const HomeSection = styled.section`
   font-size: 1.2rem;
   background: #101522;
   color: #fff;
+  padding-top: 2em;
 `;
 
 export const HomeContainer = styled(Container)`
