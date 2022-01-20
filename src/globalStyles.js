@@ -29,21 +29,28 @@ export const BigImage = styled.img`
   height: 480px;
   border-radius: 0.5rem;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 991px) {
     width: 350px;
     height: 350px;
     transform: none;
   }
-`
+`;
 
 export const SmallImage = styled.img`
-  width: 280px;
-  height: 240px;
+  flex-basis: 350px;
+  height: 350px;
   border-radius: 2rem;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 991px) {
     width: 350px;
     height: 280px;
+    flex-wrap: wrap;
+    margin: 2em 0;
   }
+`;
 
+export const Button = styled.button`
+  width: 200px;
+  height: 50px;
+  background-color: ${({bg}) => bg}
 `;

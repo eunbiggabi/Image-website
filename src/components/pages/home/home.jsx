@@ -10,13 +10,13 @@ import {
   HomeSideContainer,
   HomeSideImage1,
   HomeSideImage2,
-  HomeSideInfo,
-  HomeSideTitle,
-  HomeSideDesciption,
+  HomeSideImage3,
 } from "./home.styles";
 import MainImage from "../../../assets/images/home/profile.jpeg";
 import SideImage1 from "../../../assets/images/home/homeSide1.jpeg";
 import SideImage2 from "../../../assets/images/home/homeSide2.jpeg";
+import SideImage3 from "../../../assets/images/home/homeSide3.jpeg";
+import { Button } from "../../button/button.styles";
 
 export default function Home() {
   return (
@@ -31,22 +31,14 @@ export default function Home() {
               dicta quod beatae labore nemo molestias distinctio facere ex cum
               est cumque! Distinctio.
             </HomeDescription>
-            <HomeButton />
+            <Button bg="red" />
           </HomeInfo>
           <HomeMainImage src={MainImage} />
         </HomeMainContainer>
         <HomeSideContainer>
           <HomeSideImage1 src={SideImage1} />
-          <HomeSideInfo>
-            <HomeSideTitle>I am a Fruit girl</HomeSideTitle>
-            <HomeSideDesciption>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              deleniti debitis, fuga, eum nisi harum, nobis suscipit nulla est
-              nam ullam dicta tempore explicabo deserunt recusandae laborum
-              blanditiis magni perferendis?
-            </HomeSideDesciption>
-          </HomeSideInfo>
           <HomeSideImage2 src={SideImage2} />
+          <HomeSideImage3 src={SideImage3} />
         </HomeSideContainer>
       </HomeContainer>
     </HomeSection>

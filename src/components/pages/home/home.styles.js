@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container, BigImage, SmallImage } from "../../../globalStyles";
+import { Container, BigImage, SmallImage, Button } from "../../../globalStyles";
 
 export const HomeSection = styled.section`
   display: flex;
@@ -28,11 +28,19 @@ export const HomeInfo = styled.div``;
 
 export const HomeTitle = styled.h1`
   text-align: center;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 2em;
+  }
 `;
 
-export const HomeDescription = styled.p``;
+export const HomeDescription = styled.p`
+  margin-top: 2rem;
+`;
 
-export const HomeButton = styled.button``;
+export const HomeButton = styled(Button)`
+  ${Button}
+`;
 
 export const HomeMainImage = styled(BigImage)`
   transform: rotate(10deg);
@@ -45,7 +53,8 @@ export const HomeMainImage = styled(BigImage)`
 
 export const HomeSideContainer = styled.div`
   display: flex;
-  padding-top: 3em;
+  justify-content: space-between;
+  padding: 3em 0;
 
   @media screen and (max-width: 760px) {
     flex-direction: column;
@@ -58,20 +67,11 @@ export const HomeSideImage1 = styled(SmallImage)`
 `;
 
 export const HomeSideImage2 = styled(SmallImage)`
+  ${SmallImage};
+  order: 3;
+`;
+
+export const HomeSideImage3 = styled(SmallImage)`
+  order: 2;
   ${SmallImage}
 `;
-
-export const HomeSideInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0 2em;
-  text-align: center;
-
-  @media screen and (max-width: 760px) {
-    padding: 2em 0;
-  }
-`;
-
-export const HomeSideTitle = styled.h2``;
-
-export const HomeSideDesciption = styled.p``;
